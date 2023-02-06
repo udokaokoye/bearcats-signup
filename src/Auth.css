@@ -1,0 +1,264 @@
+.authHeader {
+  width: 100%;
+  height: 6vh;
+  background: #404040;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.authHeader .logo {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.authHeader .logo .logoImg {
+  width: 23%;
+  height: 100%;
+  background: url("../Cincinnati_Bearcats_logo.svg.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.authHeader .logo .logoText {
+  color: white;
+  font-size: 23px;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+.authHeader .navLoginForm {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.authHeader .navLoginForm input {
+  width: 200px;
+  height: 100%;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #606060;
+  color: rgb(230, 230, 230);
+}
+.authHeader .navLoginForm input:focus {
+  outline: none;
+}
+.authHeader .navLoginForm input::-moz-placeholder {
+  color: rgb(230, 230, 230);
+}
+.authHeader .navLoginForm input:-ms-input-placeholder {
+  color: rgb(230, 230, 230);
+}
+.authHeader .navLoginForm input::placeholder {
+  color: rgb(230, 230, 230);
+}
+.authHeader .navLoginForm button {
+  width: 100px;
+  height: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.authmain {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.authmain .artContainer {
+  width: 60%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  z-index: 3;
+  background: rgb(255, 241, 215);
+}
+.authmain .artContainer .logoArt {
+  width: 70%;
+  margin: 0 auto;
+  height: 50%;
+  background: url("../Cincinnati_Bearcats_logo.svg.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.authmain .artContainer .logoArtText {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  background: url("../Cincinnati_University_Bearcats_textlogo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.authmain .authForm {
+  transition: all 0.5s ease-in-out;
+  width: 30%;
+  height: 80%;
+  padding: 10px;
+  margin: 0 auto;
+}
+.authmain .authForm .fieldEntry {
+  width: 45%;
+  margin-top: 25px;
+}
+.authmain .authForm .fieldEntry label {
+  display: block;
+  margin-bottom: 10px !important;
+}
+.authmain .authForm .fieldEntry input, .authmain .authForm .fieldEntry select, .authmain .authForm .fieldEntry textarea {
+  width: 100%;
+  height: 35px !important;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: rgb(242, 241, 241);
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.authmain .authForm .fieldEntry input:focus, .authmain .authForm .fieldEntry select:focus, .authmain .authForm .fieldEntry textarea:focus {
+  outline-color: transparent;
+}
+.authmain .authForm .fieldEntry textarea {
+  width: 100% !important;
+  height: 100px !important;
+}
+.authmain .authForm .fieldEntry small {
+  color: red;
+}
+.authmain .authForm .textareaField {
+  width: 100% !important;
+}
+.authmain .authForm .addProfileImages {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 40px;
+  cursor: pointer;
+  background-color: rgb(238, 238, 238);
+  position: relative;
+}
+.authmain .authForm .addProfileImages .float_c_btn {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(231, 231, 231);
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.authmain .authForm .addProfileImages .float_c_btn span {
+  margin-left: 5px;
+}
+.authmain .authForm .addProfileImages input {
+  visibility: hidden;
+}
+.authmain .authForm .addProfileImages h3 {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 23px;
+  font-weight: bold;
+}
+.authmain .authForm .addProfileImages .cc {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.authmain .authForm .addProfileImages .pp {
+  background: rgb(242, 241, 241);
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ccc;
+}
+.authmain .authForm .addProfileImages .pp p {
+  font-size: 18px;
+  font-weight: 300;
+}
+.authmain .authForm h3 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+.authmain .authForm .fields {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.authmain .authForm .fields .fieldEntry {
+  width: 45%;
+  height: 100px;
+}
+.authmain .authForm .fields .fieldEntry label {
+  margin-bottom: 15px !important;
+}
+.authmain .authForm .fields .fieldEntry input {
+  width: 100%;
+}
+.authmain .authForm button {
+  width: 100%;
+  height: 40px;
+  background-color: red;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1033px) {
+  .authmain {
+    display: block;
+  }
+  .authmain .artContainer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  .authmain .artContainer .logoArt {
+    display: none;
+  }
+  .authmain .artContainer .logoArtText {
+    display: block;
+    margin-top: 50px;
+  }
+  .authmain .authForm {
+    width: 70%;
+    height: 80%;
+  }
+}/*# sourceMappingURL=Auth.css.map */

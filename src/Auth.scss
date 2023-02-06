@@ -1,0 +1,303 @@
+// ! AUTH HEADER
+
+.authHeader {
+    width: 100%;
+    height: 6vh;
+    background: #404040;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    .logo {
+        width: 20%;
+        height: 100%;
+        // background: red;
+        display: flex;
+        align-items: center;
+        .logoImg {
+            width: 23%;
+            height: 100%;
+            background: url('../Cincinnati_Bearcats_logo.svg.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .logoText {
+            color: white;
+            font-size: 23px;
+            font-family: 'Roboto';
+            font-weight: bold;
+        }
+    }
+
+    .navLoginForm {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        input {
+            width: 200px;
+            height: 100%;
+            padding-left: 10px;
+            border-radius: 5px;
+            border: none;
+            background: #606060;
+            color: rgb(230, 230, 230);
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                color: rgb(230, 230, 230);
+            }
+        }
+
+        button {
+            width: 100px;
+            height: 100%;
+            border-radius: 5px;
+            border: none;
+            background-color: red;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    }
+}
+
+// ! Auth Main
+
+.authmain { 
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    .artContainer {
+        width: 60%;
+        height: 100%;
+        transition: all 0.5s ease-in-out;
+        z-index: 3;
+        background: rgb(255, 241, 215);
+        // background: blue;
+
+        .logoArt {
+            width:70%;
+            margin: 0 auto;
+            // margin-top: auto;
+            height: 50%;
+            background: url('../Cincinnati_Bearcats_logo.svg.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .logoArtText {
+            width: 50%;
+            height: 50%;
+            margin: 0 auto;
+            background: url('../Cincinnati_University_Bearcats_textlogo.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .authForm {
+        // background: #fff;
+        transition: all 0.5s ease-in-out;
+        width: 30%;
+        height: 80%;
+        // background: #ccc;
+        padding: 10px;
+        margin: 0 auto;
+        
+
+    .fieldEntry {
+        width: 45%;
+        margin-top: 25px;
+        label {
+            display: block;
+            margin-bottom: 10px !important;
+        }
+        input, select, textarea {
+            width: 100%;
+            height: 35px !important;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background: rgb(242, 241, 241);
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            &:focus {
+                outline-color: transparent;
+            }
+        }
+        textarea {
+            width: 100% !important;
+            height: 100px !important;
+        }
+
+        small {
+            color: red;
+        }
+    }
+    .textareaField {
+        width: 100% !important;
+    }
+
+    .addProfileImages {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 40px;
+        cursor: pointer;
+        background-color: rgb(238, 238, 238);
+        position: relative;
+
+        .float_c_btn {
+            position: absolute;
+            width: 120px;
+            height: 40px;
+            border-radius: 8px;
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(231, 231, 231);
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+
+            span {
+                margin-left: 5px;
+            }
+        }
+
+        input {
+            visibility: hidden;
+        }
+
+        h3 {
+            margin-top: 10px;
+            font-weight: 300;
+            font-size: 23px;
+            font-weight: bold;
+            // transform: translateX();
+        }
+
+        // background: black;
+
+        .cc {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+        .pp {
+            background: rgb(242, 241, 241);
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            cursor: pointer;
+
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid #ccc;
+
+            p {
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+    }
+
+
+
+        h3 {
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
+
+        .fields {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .fieldEntry {
+                width: 45%;
+                height: 100px;
+                label {
+                    margin-bottom: 15px !important;
+                }
+                input {
+                    width: 100%;
+                    // height: 30px;
+                }
+            }
+
+        }
+
+        button {
+            width: 100%;
+            height: 40px;
+            background-color: red;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            border: 2px solid #000;
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (max-width: 1033px) {
+    .authmain {
+        display: block;
+
+        .artContainer {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+
+            .logoArt {
+                display: none;
+            }
+
+            .logoArtText {
+                display: block;
+                // width: 100px;
+                margin-top: 50px;
+            }
+        }
+
+        .authForm {
+            width: 70%;
+            height: 80%;
+        }
+    }
+}
